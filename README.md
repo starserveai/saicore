@@ -1,18 +1,23 @@
-
 # StellantAI Core Specification
+![SAI Core](images/SAIcore.png)
 
 ## **Summary**
 StellantAI Core (SAI Core) is provided as a modular, scalable, and cross-platform project structure designed for modern AI applications.  
+
 Start with a centralized design, theme, and layout that can be deployed globally on virtually any device, cloud or network. 
+
+IMPORTANT NOTE:  This is a development project with minimal testing and support.
+
+Please engage a professional developer or development org for assistance!
 
 ---
 
 ## **Problem**
 Developers often face challenges when managing **multiple frameworks, layouts, and components** in a single project:
 - **Duplication** of assets and themes across frameworks (e.g., React, HTML, Tailwind).
-- Difficulty in maintaining visual consistency between TSX (React) and static HTML pages.
-- Lack of reusable design tokens for seamless Figma-to-code integration.
-- Fragmented support for multiple frameworks and project types, such as mobile apps, PWAs, and web apps.
+- **Difficulty** in maintaining visual consistency between TSX (React) and static HTML pages.
+- **Lack of reusable design tokens** for seamless Figma-to-code integration.
+- **Fragmented and isolated projects across multiple frameworks** Multiple  projects, designs and assets across web, mobile apps, PWAs, and desktops.
 
 ---
 
@@ -156,7 +161,7 @@ In the future we'll post SAI Core Variants that provide support for additional f
 Meanwhile, here are some tips on how to test out SAI Core for these variants:
 
 1. **CSS Frameworks**:
-   - **Tailwind CSS Variant | SAI Tailwind Veriant**:  Test it out--using SAI Core, replace AntDesign CSS with Tailwind's utility-first classes.
+   - **Tailwind CSS Variant | SAI Tailwind Veriant**:  Test it out--using SAI Core, replace AntDesign CSS with Tailwind's utility-first classes.  More below.
   
    - **Bootstrap Variant | SAI Bootstrap**: Test it out--using SAI Core, Use Bootstrap grid and components for both TSX and HTML.
 
@@ -167,10 +172,21 @@ Meanwhile, here are some tips on how to test out SAI Core for these variants:
 3. **Project Types**:
    - **React Native Variant**: Extend SAI Core for mobile apps using React Native.
    - **PWA Variant**: Create Progressive Web Apps with Next.js or Vite.
+  
+## Tailwind CSS Variant Guidance ##
+	•	Install Tailwind:
+   ```
+   npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
+```
+•	Update tailwind.config.js for shared content paths.
+•	Replace global.css with Tailwind utility classes.
+
+NOTE:  As of this writing, Tailwind CSS variant has not been fully tested.
 
 ---
 
-## **Usage**
+## **Setup Steps and Usage**
 ### **Step 1: Clone the Repository**
 ```bash
 git clone https://github.com/starserveai/SAICore.git
