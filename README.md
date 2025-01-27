@@ -1,5 +1,5 @@
 # StellantAI Core Specification
-![SAI Core](images/SAIcore.png)
+![SAI Core](SAIcore.png)
 
 ## **Summary**
 StellantAI Core (SAI Core) is provided as a modular, scalable, and cross-platform project structure designed for modern AI applications.  
